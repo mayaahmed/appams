@@ -1,0 +1,38 @@
+			.speechContainer{
+             //   margin-top: 25px;
+				background: khaki;
+				padding:5px; 
+				box-shadow: 0 0 10px 0 #ccc;
+                text-align: center;
+                opacity: 0.8;
+			}
+			
+			.speechContainer label{
+			//	display: block;
+			
+			}
+			.speechContainer label span{
+			//	width: 100px;
+				margin-top: 20px;
+				display: inline-block;
+			}
+			.speechContainer label select, .speechContainer label input{
+			//	width: 290px;
+			}
+			
+            .button{
+				display: inline-block;
+				background: #f6f6f6;
+				padding: 10px 20px;
+				color: #000;
+				border: 1px solid #ccc;
+				cursor: pointer;
+			//	margin-top: 20px;
+			}
+			.button:hover{
+				box-shadow: 4px 4px 10px 0 #ccc;
+			}
+
+
+
+	

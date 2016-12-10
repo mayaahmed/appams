@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--  Programmer : Maya Ahmed 
+      Files: chapterq.html;
+      Date: "Nov 17 2016" -->
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Punjiri: Web and Mobile Technologies.</title>
+		
+    
+        
+	    <link rel="stylesheet" type="text/css" href="story.css">
+        <link rel="stylesheet" type="text/css" href="voice.css">
+
+	</head>
+
+	<body>
+		
+
+
+<style>
+h1{
+color: khaki;
+text-shadow: 1px 1px 1px gray;
+}
+
+
+#canvas{
+margin: 0;
+	background-image: url(sleepsprite.jpg);
+	width: 300px;
+	height: 300px;
+
+ animation: frog-bounce 1s steps(3) infinite;
+}
+@keyframes frog-bounce {
+	from { background-position: 0px; }
+	to { background-position: -900px; }
+}
+
+
+
+
+</style>
+
+<div class="main">
+
+
+<canvas id="canvas" width="300" height="300" style="border:1px solid #000000;"></canvas>
+
+<div id="myText"><P> So the two of them laid down making no sound, with their eyes shut,
+and hardly breathing. A neighbor who wanted to borrow some match
+sticks came and found them thus. All her attempts to get some response
+from them failed. She panicked and made a big ruckus. The villagers
+gathered around thinking that Amooma and Apoopan were dead. </p>
+
+<P> "Let us bury them" said the priest. </p> 
+  </div>
+
+
+
+<div class="speechContainer">
+<p>	<div class="button" onclick="speak();">Speak</div> <div class="button" onclick="stop();">Stop</div>
+<div class="button" onclick="pause();">Pause</div><div class="button" onclick="resume();">Resume</div>
+		<div class="button" onclick="location.href='coffinIndex.html'">Next Page</div> </p>	
+			<p>	<label>
+				<span>Voice</span>
+				<select id="voiceOptions"></select>
+			</label> </p>
+	<p> 	<label>
+				<span>Volume</span>
+				<input type="range" id="volumeSlider" min="0" max="1" value="0.5" step="0.1" />
+			</label>
+			<label>
+				<span>rate</span>
+				<input type="range" id="rateSlider" min="0" max="1" value="0.5" step="0.1" />
+			</label>
+			<label>
+				<span>Pitch</span>
+				<input type="range" id="pitchSlider" min="0" max="2" value="0.5" step="0.1" />
+			</label> </p>
+	
+</div>
+
+	
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85159230-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script src="sleepingIndex.js"></script> 
+
+ </body>
+</html>
